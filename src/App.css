@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,132 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container-login {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  position: relative;
+}
+
+.login_main {
+  background: grey;
+  max-width: 400px;
+  width: 100%;
+  height: auto !important;
+  padding: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login_main h3,
+.registr_mian h3 {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.user_name {
+  padding: 10px 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.user_name label {
+  color: rgb(42, 206, 157);
+  padding: 10px 5px;
+}
+
+.user_name input:focus {
+  outline: none !important;
+  border: 1px solid red;
+  box-shadow: 0 0 10px #719ECE;
+}
+
+.user_name input {
+  width: 100%;
+  padding: 10px 25px 10px 5px;
+}
+
+
+button.btn_log_in {
+  border-radius: 8px;
+  border: 0.5px solid #61B0DC;
+  opacity: 0.8;
+  background: #7FB4D3;
+  width: 100%;
+  max-width: 100px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+p.log_cont {
+  text-align: center;
+  color: #fff;
+}
+
+p.log_cont span {
+  cursor: pointer;
+  color: aquamarine;
+}
+
+.registr_mian {
+  background: grey;
+  max-width: 400px;
+  width: 100%;
+  height: auto !important;
+  padding: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.user_name .pwd_cont {
+  position: relative;
+  display: flex;
+}
+
+.user_name .hide_shw_pwd {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  height: 15px;
+  width: 20px;
+}
+
+.user_name .hide_shw_pwd.active i.show_icn {
+  display: block;
+}
+
+.user_name .hide_shw_pwd i.hide_icn {
+  display: block;
+}
+
+.user_name .hide_shw_pwd.active i.hide_icn {
+  display: none;
+}
+
+.user_name .hide_shw_pwd i.show_icn {
+  display: none;
+}
+
+.err_msg {
+  padding: 5px 5px 5px 10px;
+  display: none;
 }
